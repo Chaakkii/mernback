@@ -176,8 +176,8 @@ router.post('/guess', async (req, res) => {
 ```
 * Vastaus, mitä FrontEnd vastaanottaa
 
-![Kuvankaappaus veikkauksesta high - true](.screenshots/highTrue.png)
-![Kuvankaappaus veikkauksesta low - false](.screenshots/lowFalse.png)
+![Kuvankaappaus veikkauksesta high - true](screenshots/highTrue.png)
+![Kuvankaappaus veikkauksesta low - false](screenshots/lowFalse.png)
 
 * Pelin päättyminen: Kun käyttäjä lopettaa pelin, Backend tallentaa lopulliset pisteet sessiosta tietokantaan ja tuhoaa käyttäjän session, jolloin pelitiedot nollataan seuraavaa peliä varten.
 Tämä rakenne takaa, että kaikki pelitilaan liittyvät kriittiset tiedot pysyvät turvallisesti palvelimen puolella, ja niitä ei voida manipuloida suoraan frontendistä.
@@ -247,13 +247,13 @@ router.get('/toplist', async (req, res) => {
 Reactilla tein vain yksinkertaisen pelialustan pelin toteutukseen: 
 
 * Sisäänkirjautuminen:
-![React sisäänkirjautuminen](.screenshots/login.png)
+![React sisäänkirjautuminen](screenshots/login.png)
 
 * Jos nimi ei ole uniikki:
-![React sisäänkirjautuminen](.screenshots/notUnique.png)
+![React sisäänkirjautuminen](screenshots/notUnique.png)
 
 * Pelin sisällä:
-![React sisäänkirjautuminen](.screenshots/ingame.png)
+![React sisäänkirjautuminen](screenshots/ingame.png)
 
 ## 3. Arkkitehtuurikaavio
 
