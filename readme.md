@@ -247,12 +247,15 @@ router.get('/toplist', async (req, res) => {
 Reactilla tein vain yksinkertaisen pelialustan pelin toteutukseen: 
 
 * Sisäänkirjautuminen:
+  
 ![React sisäänkirjautuminen](screenshots/login.png)
 
 * Jos nimi ei ole uniikki:
+  
 ![React sisäänkirjautuminen](screenshots/notUnique.png)
 
 * Pelin sisällä:
+  
 ![React sisäänkirjautuminen](screenshots/ingame.png)
 
 ## 3. Arkkitehtuurikaavio
