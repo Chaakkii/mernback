@@ -291,3 +291,12 @@ MERN - Stack Explained. MongoDB. Linkki:
 
 https://www.mongodb.com/resources/languages/mern-stack Luettu 16.11.2024
 
+## 6. Linkit
+
+Microsoft Stream:
+
+[Katso video tästä](https://haagahelia-my.sharepoint.com/:v:/r/personal/bhd459_myy_haaga-helia_fi/Documents/seminaarivideo.mov?csf=1&web=1&e=eF3gsQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+FrontEnd Repo:
+
+[Linkki Frontin repoon](https://github.com/Chaakkii/cardgame)

@@ -20,38 +20,6 @@ router.post('/check-username', async (req, res) => {
   }
 });
 
-router.post('/endgame', async (req, res) => {
-
-  const score = req.session.score
-  const userName = req.session.userName;
-
-  if (!userName || !score) {
-    return res.status(400).json({ message: 'Ei löytynyt tarvittavia tietoja (käyttäjänimeä tai pistetietoja).' });
-  }
-
-  try {
-    const user = new User({
-      userName: userName,
-      score: score,
-      });
-
-    await user.save();
-
-    res.status(200).json({ message: 'Pisteet tallennettu onnistuneesti!' });
-
-    req.session.destroy((err) => {
-      if (err) {
-        console.error('Virhe session tuhoamisessa:', err);
-      } else {
-        console.log('Sessio tuhoutui onnistuneesti');
-      }
-    });
-  } catch (error) {
-    console.error('Virhe pisteiden tallentamisessa:', error);
-    res.status(500).json({ message: 'Virhe pisteiden tallentamisessa' });
-  }
-});
-
 router.post('/guess', async (req, res) => {
   const { guess } = req.body;
   const userName = req.session.userName;
@@ -98,6 +66,38 @@ router.post('/guess', async (req, res) => {
   } catch (error) {
     console.error('Virhe kortin arpomisen yhteydessä:', error);
     res.status(500).json({ message: 'Virhe kortin arpomisen yhteydessä' });
+  }
+});
+
+router.post('/endgame', async (req, res) => {
+
+  const score = req.session.score
+  const userName = req.session.userName;
+
+  if (!userName || !score) {
+    return res.status(400).json({ message: 'Ei löytynyt tarvittavia tietoja (käyttäjänimeä tai pistetietoja).' });
+  }
+
+  try {
+    const user = new User({
+      userName: userName,
+      score: score,
+      });
+
+    await user.save();
+
+    res.status(200).json({ message: 'Pisteet tallennettu onnistuneesti!' });
+
+    req.session.destroy((err) => {
+      if (err) {
+        console.error('Virhe session tuhoamisessa:', err);
+      } else {
+        console.log('Sessio tuhoutui onnistuneesti');
+      }
+    });
+  } catch (error) {
+    console.error('Virhe pisteiden tallentamisessa:', error);
+    res.status(500).json({ message: 'Virhe pisteiden tallentamisessa' });
   }
 });
 
