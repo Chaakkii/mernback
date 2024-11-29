@@ -252,11 +252,11 @@ Reactilla tein vain yksinkertaisen pelialustan pelin toteutukseen:
 
 * Jos nimi ei ole uniikki:
   
-![React sisäänkirjautuminen](screenshots/notUnique.png)
+![React ei uniikkinimi](screenshots/notUnique.png)
 
 * Pelin sisällä:
   
-![React sisäänkirjautuminen](screenshots/ingame.png)
+![React pelissä](screenshots/ingame.png)
 
 ## 3. Arkkitehtuurikaavio
 
